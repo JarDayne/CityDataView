@@ -1,0 +1,267 @@
+
+
+@media all {
+
+    html, body {
+        margin: 0;
+        padding:0;
+        height: 100%;
+    }
+    body {
+        padding: 1rem;
+        width: 97vw;
+    }
+    body::after {
+        background-image: linear-gradient(#000, #3F9DBF);
+        background-size: cover;
+        position: fixed;
+        content: "";
+        top: 0;
+        left: 0;
+        bottom: 0;
+        right: 0;
+        z-index: -1;
+    }
+
+
+    .flex {
+        display: flex;
+    }
+    .full {
+        height: 100%;
+        width: 100%;
+    }
+    .grid {
+        display: grid;
+    }
+
+
+    #header > h1 {
+        grid-column: 1;
+        color: #cedce7;
+        font-family: "Lucida Bright";
+        font-size: 2rem;
+        letter-spacing: 5px;
+    }
+    #header > img {
+        grid-column: 60;
+        border-radius: 50px;
+        border: 2px silver solid;
+    }
+
+
+    #content {
+        height: 100%;
+    }
+
+
+
+    .flex>div button
+    {
+        height: 10ch;
+        transition: 1s ease-out;
+        border-radius: 10px;
+        border:2px outset darkblue;
+        background-color: silver;
+        width:120px;
+        margin: 10px -10px 10px 0;
+        padding:20px;
+        box-shadow: 10px 10px 10px dimgrey;
+        font-weight: 900;
+        font-family: "Lucida Sans";
+    }
+    .flex > div button:nth-child(1){background-color: lightgrey; }
+    .flex > div button:nth-child(2){background-color: lightgrey;}
+    .flex > div button:nth-child(3){background-color: lightgrey;}
+    .flex > div button:nth-child(4){background-color: lightgrey;}
+    .flex>div button:hover
+    {
+        width:250px;
+        color:white;
+        cursor: pointer;
+    }
+    .flex > div:nth-child(1) button:hover{background-color: royalblue;}
+    .flex > div:nth-child(2) button:hover{background-color: crimson;}
+    .flex > div:nth-child(3) button:hover{background-color: pink;}
+    .flex > div:nth-child(4) button:hover{background-color: darkgreen;}
+    .flex > div:nth-child(5) button:hover{background-color: chartreuse;}
+
+
+
+
+    #topbutton {
+        display: none;
+        position: fixed;
+        bottom: 25px;
+        right: 15px;
+        z-index: 99;
+        width: 80px;
+    }
+    #topbutton h3 {
+        margin-bottom: 83px;
+        top: 0;
+        color: #dcdcdc;
+        text-align: center;
+        letter-spacing: 1px;
+        margin-left: 1px;
+    }
+    #myBtn {
+        position: fixed;
+        bottom: 25px;
+        right: 15px;
+        z-index: 99;
+        border: none;
+        outline: none;
+        cursor: pointer;
+        border-radius: 50px;
+        background-image: url("../img/DataAnalyticLogo.jpg");
+        width: 80px;
+        height: 80px;
+    }
+    #myBtn:hover {
+        border: 7px silver solid;
+    }
+
+    #search {
+        display: none;
+        background-image: linear-gradient(to right, rgba(1,145,73,0.61) , rgba(65,115,198,0.61));
+        padding: 1rem;
+        width: 70%;
+        margin-right: auto;
+        margin-left: auto;
+        min-height: 70vh;
+    }
+    #search div {
+        display: inline-flex;
+    }
+    #searchinformation {
+        border: 5px rebeccapurple dashed;
+        background-color: rgba(119,31,198,0.4);
+        width: 40%;
+        color: white;
+        padding: 3ch;
+        margin-left: 10rem;
+        line-height: 25px;
+        letter-spacing-spacing: 2px;
+    }
+    #searchPrompt{
+        width: 40%;
+    }
+    #searchPrompt input {
+        width: 100%;
+        height: 30px;
+        font-family: "Lucida Sans Unicode";
+        font-size: larger;
+        letter-spacing: 2px;
+        word-spacing: 6px;
+        padding-left: 20px;
+        padding-right: 20px;
+        border: #6d6d6d 1px solid;
+        -moz-box-shadow: 0px 2px 4px dimgray;
+        -webkit-box-shadow: 0px 2px 4px dimgray;
+        box-shadow: 0px 2px 4px dimgray;
+    }
+
+
+    #datacontent {
+        display: none;
+        height: 78%;
+        padding-top: 2rem;
+        background-image: url("../img/background1.png");
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+    #displaycontent {
+        border: 5px solid white;
+        width: 90rem;
+        max-width: 90rem;
+        height: 90rem;
+        margin-right: auto;
+        margin-left: auto;
+        overflow: hidden;
+    }
+    table {
+        width: 100%;
+        background-color: rgba(235,252,255,0.99);
+        border: 1px solid black;
+        border-collapse: separate;
+        font-family: "Lucida Sans Typewriter";
+        letter-spacing: 1px;
+    }
+    th,td {
+        border: 1px solid black;
+        padding: 8px;
+    }
+
+
+
+    .animatedcube * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+    }
+    .animatedcube {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        min-height: 70vh;
+    }
+    .cube {
+        position: relative;
+        width: 300px;
+        height: 300px;
+        transform-style: preserve-3d;
+        transform: rotateX(-30deg);
+        animation: animate 4s linear infinite;
+    }
+    @keyframes animate {
+        0% {
+            transform: rotateX(-30deg) rotateY(0deg);
+        }
+        100% {
+            transform: rotateX(-30deg) rotateY(360deg);
+        }
+    }
+    .cube div {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        transform-style: preserve-3d;
+    }
+    .cube div span {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background: linear-gradient(#3F9DBF,#bfdcdc);
+        transform: rotateY(calc(90deg * var(--i))) translateZ(150px);
+    }
+    .top {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 300px;
+        height: 300px;
+        background:#3F9DBF;
+        transform: rotateX(90deg) translateZ(150px);
+    }
+    .top::before {
+        content: '';
+        position: absolute;
+        top: 0;
+        width: 300px;
+        height: 300px;
+        background: #bfdcdc;
+        transform: translateZ(-380px);
+        filter: blur(20px);
+        box-shadow: 0 0 120px rgba(190,220,220,0.2),
+        0 0 200px rgba(190,220,220,0.4),
+        0 0 300px rgba(190,220,220,0.6),
+        0 0 400px rgba(190,220,220,0.8),
+        0 0 500px rgba(190,220,220,1);
+
+    }
+}

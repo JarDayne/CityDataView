@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Calgary Data</title>
+    <link type="text/css" rel="stylesheet" href="styles/calgarydataStyles.css">
+    <script type="text/javascript" src="scripts/calgarydataScripts.js"></script>
+
+</head>
+<body>
+
+    <div id="topbutton">
+        <h3>Top</h3>
+        <button id="myBtn" title="To the Top" onclick="setToTop()"></button>
+    </div>
+    <div class="full">
+
+        <div id="header" class="grid">
+            <h1>Calgary Analytics</h1>
+            <img src="img/DataAnalyticLogo.jpg" id="logo" alt="Search the Clouds Logo">
+        </div>
+
+        <div id="content">
+            <div id="datatabs" class="flex">
+                <div id="homeon1">
+                    <button onclick="searchtypefunction(0); return false;">Home</button>
+                </div>
+                <div id="data1on2">
+                    <button onclick="searchtypefunction(1); return false;">Traffic Incidents</button>
+                </div>
+                <div id="data2on3">
+                    <button onclick="searchtypefunction(2); return false;">Traffic Cameras</button>
+                </div>
+                <div id="data3on4">
+                    <button onclick="searchtypefunction(3); return false;">Crime Stats</button>
+                </div>
+                <div id="data4on5">
+                    <button onclick="searchtypefunction(4); return false;">Building Permits</button>
+                </div>
+            </div>
+
+            <hr>
+
+            <div id="search" class="flex">
+                <div id="searchPrompt">
+                    <input type="text" id="searchbar" placeholder="Search here! Results are below." onkeyup="searchFunction(); return false;">
+                </div>
+                <div id="searchinformation">
+                    <span id="displayinformation"></span>
+                </div>
+            </div>
+
+            <div id="visual">
+                <div class="animatedcube">
+                    <div class="cube">
+                        <div class="top"></div>
+                        <div>
+                            <span style="--i:0;"></span>
+                            <span style="--i:1;"></span>
+                            <span style="--i:2;"></span>
+                            <span style="--i:3;"></span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div id="datacontent">
+                <div id="displaycontent">
+                    <span id="display"></span>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+</body>
+</html>

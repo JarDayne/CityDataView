@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>The Quiz</title>
+    <link type="text/css" href="styles/thequizStyle.css" rel="stylesheet"/>
+    <script type="text/javascript" src="scripts/thequizScript.js"></script>
+</head>
+<body>
+
+        <div id="quizcontent" >
+
+            <div id="header" class="fullhorizontal">
+                <h1>The Programming Quiz</h1>
+            </div>
+
+            <hr>
+
+            <div id="questionscontent" class="fullhorizontal flex">
+                <span id="questionsdisplay"></span>
+            </div>
+
+            <div id="gradingbox" class="grid fullhorizontal">
+                <div>
+                    <input id="gradebutton" type="button" value="Grade Quiz" class="hoverindicate fullspace" onclick="checkAnswers(); return false;">
+                </div>
+                <div>
+                    <h2>
+                        Score: &emsp;<span id="scoredisplay"></span>/5
+                    </h2>
+                </div>
+            </div>
+
+        </div>
+
+</body>
+</html>
