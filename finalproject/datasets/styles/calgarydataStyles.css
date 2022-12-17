@@ -137,12 +137,13 @@
     #searchinformation {
         border: 5px rebeccapurple dashed;
         background-color: rgba(119,31,198,0.4);
+        font-family: "Lucida Sans Unicode";
         width: 40%;
         color: white;
         padding: 3ch;
         margin-left: 10rem;
         line-height: 25px;
-        letter-spacing-spacing: 2px;
+        letter-spacing: 2px;
     }
     #searchPrompt{
         width: 40%;
@@ -163,6 +164,8 @@
     }
 
 
+
+
     #datacontent {
         display: none;
         height: 78%;
@@ -178,7 +181,25 @@
         height: 90rem;
         margin-right: auto;
         margin-left: auto;
-        overflow: hidden;
+        overflow-y: scroll;
+    }
+    /* width */
+    #displaycontent::-webkit-scrollbar{
+        width: 5px;
+    }
+    /* Track */
+    #displaycontent::-webkit-scrollbar-track {
+        background: #f1f1f1; 
+    }
+   
+    /* Handle */
+    #displaycontent::-webkit-scrollbar-thumb {
+        background: #408000; 
+    }
+    
+    /* Handle on hover */
+    #displaycontent::-webkit-scrollbar-thumb:hover {
+        background: #1a3300; 
     }
     table {
         width: 100%;
