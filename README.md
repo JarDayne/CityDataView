@@ -1,2 +1,2 @@
 # CityDataView
-Explore city records. You'll find the code is modular, the css is clean and wonderful, and the web page body structure.
+A Frontend project. Explore various city records pulled from shared JSON datasets, using AJAX. The layout has a cool colour palette.
